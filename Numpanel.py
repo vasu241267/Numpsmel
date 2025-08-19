@@ -91,10 +91,9 @@ def mask_number(number):
 # Send message to Telegram with inline buttons
 # Multiple group IDs
 CHAT_IDS = [
-    "-1003099856357",   # Group 1
-    "-1002916447744",   # Group 2
-    "-1003083630707",   # Group 3
-    "-1002992581956"    # Group 4
+    "-1002184298640",   # Group 1
+    "-1002734602060",   # Group 2
+    
 ]
 
 # Send message to Telegram with inline buttons
@@ -210,6 +209,7 @@ if __name__ == '__main__':
     
     # Start the Flask web server
     app.run(host='0.0.0.0', port=8080)
+
 
 
 
