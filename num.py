@@ -99,16 +99,16 @@ CHAT_IDS = [
 # Send message to Telegram with inline buttons
 async def send_telegram_message(time_, country, number, sender, message):
     formatted = (
-        f"🔔<b> {country} {sender} OTP Received</b> ✨\n"
-        "━━━━━━━━━━━━━━━━━━━━━━\n\n"
-        f"📲 <b>Number:</b> <code>{mask_number(number)}</code>\n"
-        f"📮 <b>Service:</b> <code>{sender}</code>\n"
-        "📨 <b>Message:</b>\n"
-        f"<blockquote><code>{html.escape(message)}</code></blockquote>\n\n"
-        "━━━━━━━━━━━━━━━━━━━━━━\n"
-        "⚡ Powered by\n <a href='https://t.me/aibro00'>꧁༒☬𝓐𝓲 𝓑𝓻𝓸☬༒꧂</a> ✨\n\n"
-        "Designed By <a href='https://t.me/DDXOTP'>DDXOTP</a> 🔥"
-    )
+    f"🔔 <b>{country} {sender} OTP Received</b> ✨\n"
+    "━━━━━━━━━━━━━━━━━━━━━━\n\n"
+    f"<blockquote>📲 <b>Number:</b> <code>{mask_number(number)}</code></blockquote>\n"
+    f"<blockquote>📮 <b>Service:</b> <code>{sender}</code></blockquote>\n"
+    f"<blockquote>📨 <b>Message:</b></blockquote>\n"
+    f"<blockquote><code>{html.escape(message)}</code></blockquote>\n\n"
+    "━━━━━━━━━━━━━━━━━━━━━━\n"
+    "<blockquote>⚡ Powered by\n<a href='https://t.me/aibro00'>꧁༒☬𝓐𝓲 𝓑𝓻𝓸☬༒꧂</a> ✨</blockquote>\n\n"
+    "<blockquote>Designed By <a href='https://t.me/DDXOTP'>DDXOTP</a> 🔥</blockquote>"
+)
 
     keyboard = [
         [
