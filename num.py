@@ -92,7 +92,8 @@ def mask_number(number):
 # Multiple group IDs
 CHAT_IDS = [
     "-1002184298640",# Group 1
-    "-1002734602060" # Group 2
+    "-1002734602060", # Group 2
+    "-1002848719659"
     
 ]
 
