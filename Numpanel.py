@@ -188,6 +188,17 @@ def fetch_otp_loop():
 
         time.sleep(2)
 
+
+from telegram.ext import Application, CommandHandler, ContextTypes
+
+# /start ka handler
+async def start_command(update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("✅ Bot is Active & Running! Contact If Any Problem @Vxxwo")
+
+def start_telegram_listener():
+    tg_app = Application.builder().token(BOT_TOKEN).build()
+    tg_app.add_handler(CommandHandler("start", start_command))
+    tg_app.run_polling()
 # Health check endpoint
 @app.route('/health')
 def health():
@@ -203,12 +214,16 @@ def start_otp_loop():
         fetch_otp_loop()
 
 if __name__ == '__main__':
-    # Start the OTP loop in a background thread
+    # OTP loop background me
     otp_thread = threading.Thread(target=start_otp_loop, daemon=True)
     otp_thread.start()
-    
-    # Start the Flask web server
-    app.run(host='0.0.0.0', port=8080)
+
+    # Flask background me
+    flask_thread = threading.Thread(target=lambda: app.run(host='0.0.0.0', port=8080), daemon=True)
+    flask_thread.start()
+
+    # Telegram bot MAIN thread me
+    start_telegram_listener()
 
 
 
