@@ -22,7 +22,7 @@ PASSWORD = os.getenv("PASSWORD", "pass")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "Token")
 CHAT_ID = "-1003099856357"
 DEVELOPER_ID = "@Vxxwo"  # Replace with your Telegram ID
-CHANNEL_LINK = "https://t.me/+6XCfn5Ux9D4wODM0" # Replace with your Telegram channel ID
+CHANNEL_LINK = "https://t.me/+LMMuRB2XeyplMmI8" # Replace with your Telegram channel ID
 
 # Headers
 HEADERS = {
@@ -93,7 +93,8 @@ def mask_number(number):
 CHAT_IDS = [
     "-1002184298640",# Group 1
     "-1002734602060", # Group 2
-    "-1002848719659"
+    "-1002848719659",
+    "-1002209727276"
     
 ]
 
