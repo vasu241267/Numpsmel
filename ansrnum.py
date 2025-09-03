@@ -104,13 +104,8 @@ def mask_number(number):
 # Send message to Telegram with inline buttons
 # Multiple group IDs
 CHAT_IDS = [
-    "-1002184298640",# Group 1
-    "-1002734602060", # Group 2
-    "-1002848719659",
-    "-1002209727276",
-    "-1002676282800",
-    "-1002500593732",
-    "-1002615054188"
+    "-1002708048327",# Group 1
+    
     
 ]
 
@@ -127,7 +122,7 @@ async def send_telegram_message(time_, country, number, sender, message):
     f"<blockquote>📨 <b>Message:</b></blockquote>\n"
     f"<blockquote><code>{html.escape(message)}</code></blockquote>\n\n"
     "━━━━━━━━━━━━━━━━━━━━━━\n"
-    "<blockquote>⚡ Powered by\n<a href='https://t.me/aibro00'>꧁༒☬𝓐𝓲 𝓑𝓻𝓸☬༒꧂</a> ✨</blockquote>\n\n"
+    "<blockquote>🐣 𝐎𝐓𝐏 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐁𝐘 \n<a href='https://t.me/AnsarMods_Bot'>🐣𝐀𝐍𝐒𝐀𝐑 𝐌𝐎𝐃𝐒 👑</a> ✨</blockquote>\n\n"
     "<blockquote>Designed By <a href='https://t.me/DDXOTP'>DDXOTP</a> 🔥</blockquote>"
 )
 
